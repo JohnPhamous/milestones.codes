@@ -32,7 +32,7 @@ Layout.propTypes = {
 const Wrapper = styled.main`
   margin: 0 auto;
   max-width: 960px;
-  padding: 1rem;
+  padding: 1rem 3rem;
   height: 100vh;
 `;
 

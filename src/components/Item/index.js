@@ -6,6 +6,9 @@ const Item = ({ question, onClickHandler }) => (
     {question.state ? <ToggleContainerFilled /> : <ToggleContainerEmpty />}
     <Question>
       <p>{question.question}</p>
+      <Level>{question.type}</Level>
+
+      <Separator />
     </Question>
   </ItemContainer>
 );
@@ -13,7 +16,7 @@ const Item = ({ question, onClickHandler }) => (
 const ItemContainer = styled.li`
   color: white;
   padding: 6px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -39,6 +42,23 @@ const ToggleContainerEmpty = styled.span`
 const Question = styled.span`
   /* padding-bottom: 24px; */
   /* border-bottom: 1px solid white; */
+  position: relative;
+  width: 70%;
+`;
+
+const Separator = styled.div`
+  position: absolute;
+  background: #ffffff80;
+  height: 2px;
+  width: 100%;
+  margin-top: 20px;
+`;
+
+const Level = styled.p`
+  font-size: 0.5em;
+  color: #fff6;
+  text-transform: capitalize;
+  margin: 0;
 `;
 
 export default Item;

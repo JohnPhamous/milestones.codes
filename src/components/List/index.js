@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Item from "../Item";
 import styled from "styled-components";
 import Counter from "../Globals/Counter";
+import Confetti from "react-dom-confetti";
 
 export default class List extends Component {
   state = {
@@ -39,11 +40,14 @@ export default class List extends Component {
       <ListContainer>
         <Counter count={count} />
         {questions.map((question, index) => (
-          <Item
-            key={index}
-            question={question}
-            onClickHandler={() => this.toggle(index)}
-          />
+          <>
+            <Item
+              key={index}
+              question={question}
+              onClickHandler={() => this.toggle(index)}
+            />
+            <Confetti active={question.state} />
+          </>
         ))}
       </ListContainer>
     );
