@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Item from "../Item";
 import styled from "styled-components";
+import Counter from "../Globals/Counter";
 
 export default class List extends Component {
   state = {
@@ -32,11 +33,11 @@ export default class List extends Component {
   };
 
   render() {
-    const { questions } = this.state;
+    const { questions, count } = this.state;
 
     return (
       <ListContainer>
-        <p>{this.state.count}</p>
+        <Counter count={count} />
         {questions.map((question, index) => (
           <Item
             key={index}
