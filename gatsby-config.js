@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Milestones for Programming`,
+    description: `Milestones for Programming is a checklist to help you track your journey on learning how to program.`,
+    author: `@johnphamous`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,22 +10,22 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Milestones for Programming`,
+        short_name: `Milestones`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#edba2d`,
+        theme_color: `#edba2d`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/logo.png` // This path is relative to the root of the site.
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-      },
-    },
-  ],
+      }
+    }
+  ]
 };

@@ -9,7 +9,10 @@ import Questions from "../data/questions";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Milestones"
+      keywords={[`milestones`, `programming`, `checklist`, `learning`]}
+    />
     <Intro />
     <List questions={Questions} />
   </Layout>

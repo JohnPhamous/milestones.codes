@@ -1,15 +1,11 @@
 import React from "react";
-import { AnimateOnChange } from "@nearform/react-animation";
 import styled from "styled-components";
 
 const Counter = ({ count }) => (
   <>
     <CounterWrapper>
       <p>
-        <AnimateOnChange>
-          <span>{count}</span>
-        </AnimateOnChange>{" "}
-        / 50
+        <span>{count}</span> / 50
       </p>
     </CounterWrapper>
 
