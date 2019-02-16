@@ -44,6 +44,10 @@ const Question = styled.span`
   /* border-bottom: 1px solid white; */
   position: relative;
   width: 70%;
+
+  .strikethrough {
+    color: #ffffff80;
+  }
 `;
 
 const Separator = styled.div`

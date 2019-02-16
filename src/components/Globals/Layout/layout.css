@@ -39,7 +39,7 @@ strong {
   height: 2px;
   box-shadow: 0 1px rgba(255, 255, 255, 0.6);
   margin-top: -0.7em;
-  background: white;
+  background: #ffffff80;
   transform-origin: center left;
   /* transform: scaleX(0); */
   animation: strikethrough 1s cubic-bezier(0.55, 0, 0.1, 1) 1;
