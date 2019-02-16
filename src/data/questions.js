@@ -28,11 +28,11 @@ export default [
     type: "beginner"
   },
   {
-    question: "Learned how to navigate the filesystem in a terminal",
+    question: "Navigated the filesystem in a terminal",
     type: "beginner"
   },
   {
-    question: "Learned an easy sorting algorithm such as bubble sort",
+    question: "Learned a sorting algorithm",
     type: "beginner"
   },
   {
@@ -40,7 +40,7 @@ export default [
     type: "beginner"
   },
   {
-    question: "Written a script in Bash or another scripting language",
+    question: "Written a script in a scripting language",
     type: "beginner"
   },
   {
@@ -52,16 +52,35 @@ export default [
     type: "beginner"
   },
   {
-    question:
-      "Learned the differences between an interpreter and a compiler are",
+    question: "Create a resume",
+    type: "beginner"
+  },
+  {
+    question: "Created a LinkedIn",
+    type: "beginner"
+  },
+  {
+    question: "Did a mock technical interview",
+    type: "beginner"
+  },
+  {
+    question: "Went to a hackathon",
     type: "intermediate"
   },
   {
-    question: "Used any variation of a trees for storing data",
+    question: "Learned how interpreters work",
     type: "intermediate"
   },
   {
-    question: "Learned how to use Git or another version control system",
+    question: "Learned how compilers work",
+    type: "intermediate"
+  },
+  {
+    question: "Used any variation of a tree for storing data",
+    type: "intermediate"
+  },
+  {
+    question: "Used Git or another VCS",
     type: "intermediate"
   },
   {
@@ -97,8 +116,7 @@ export default [
     type: "intermediate"
   },
   {
-    question:
-      "Join a developer community such as on Slack, Discord, or Twitter",
+    question: "Join a developer community irl or online",
     type: "intermediate"
   },
   {
@@ -108,6 +126,18 @@ export default [
   {
     question: "Worked on a remote server",
     type: "intermediate"
+  },
+  {
+    question: "Did a technical interview",
+    type: "intermediate"
+  },
+  {
+    question: "Pair programmed with someone",
+    type: "intermediate"
+  },
+  {
+    question: "Received a paid gig to program",
+    type: "advance"
   },
   {
     question: "Written a unit test for a program",
@@ -142,11 +172,27 @@ export default [
     type: "advance"
   },
   {
-    question: "Know a few design patterns for object oriented programming",
+    question: "Learned some design patterns",
     type: "advance"
   },
   {
     question: "Riced your system",
+    type: "advance"
+  },
+  {
+    question: "Built a full stack application",
+    type: "advance"
+  },
+  {
+    question: "Shipped a full fledge application",
+    type: "advance"
+  },
+  {
+    question: "Learned a third language",
+    type: "advance"
+  },
+  {
+    question: "Reviewed someone else's code",
     type: "advance"
   }
 ];

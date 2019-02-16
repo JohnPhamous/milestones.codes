@@ -5,7 +5,7 @@ const Item = ({ question, onClickHandler }) => (
   <ItemContainer onClick={onClickHandler}>
     {question.state ? <ToggleContainerFilled /> : <ToggleContainerEmpty />}
     <Question>
-      <p>{question.question}</p>
+      <p className={question.state && "strikethrough"}>{question.question}</p>
       <Level>{question.type}</Level>
 
       <Separator />
@@ -48,8 +48,8 @@ const Question = styled.span`
 
 const Separator = styled.div`
   position: absolute;
-  background: #ffffff80;
-  height: 2px;
+  background: #fff3;
+  height: 1px;
   width: 100%;
   margin-top: 20px;
 `;
