@@ -15,6 +15,8 @@ const ContainerBackground = styled.div`
   background-position: center;
   height: 100vh;
   width: 100vw;
-
-  padding: 5vh 0;
+  overflow: scroll;
+  color: white;
+  font-size: 2em;
+  line-height: 1.3;
 `;

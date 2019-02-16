@@ -2,17 +2,16 @@ import React from "react";
 
 import Layout from "../components/Globals/Layout/layout";
 import SEO from "../components/Globals/seo";
+import Intro from "../components/Intro";
+
+import List from "../components/List";
+import Questions from "../data/questions";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Milestones</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae
-      necessitatibus repellendus illum rem, quis aut eum repellat temporibus
-      eaque vero delectus sunt odio molestiae ducimus quasi exercitationem
-      nesciunt et.
-    </p>
+    <Intro />
+    <List questions={Questions} />
   </Layout>
 );
 

@@ -19,9 +19,7 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <Container>
-        <Wrapper>
-          <main>{children}</main>
-        </Wrapper>
+        <Wrapper>{children}</Wrapper>
       </Container>
     )}
   />
@@ -31,11 +29,11 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  padding: 1rem;
+  height: 100vh;
 `;
 
 export default Layout;
