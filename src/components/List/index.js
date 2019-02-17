@@ -3,6 +3,7 @@ import Item from "../Item";
 import styled from "styled-components";
 import Counter from "../Globals/Counter";
 import Confetti from "react-dom-confetti";
+import TweetButton from "../TweetButton";
 
 export default class List extends Component {
   state = {
@@ -19,7 +20,6 @@ export default class List extends Component {
   }
 
   toggle = index => {
-    console.log(index);
     let newState = this.state.questions;
     let newCount = this.state.count;
 
@@ -37,19 +37,22 @@ export default class List extends Component {
     const { questions, count } = this.state;
 
     return (
-      <ListContainer>
-        <Counter count={count} />
-        {questions.map((question, index) => (
-          <>
-            <Item
-              key={index}
-              question={question}
-              onClickHandler={() => this.toggle(index)}
-            />
-            <Confetti active={question.state} />
-          </>
-        ))}
-      </ListContainer>
+      <div>
+        <ListContainer>
+          <Counter count={count} />
+          {questions.map((question, index) => (
+            <>
+              <Item
+                key={index}
+                question={question}
+                onClickHandler={() => this.toggle(index)}
+              />
+              <Confetti active={question.state} />
+            </>
+          ))}
+        </ListContainer>
+        <TweetButton count={count} />
+      </div>
     );
   }
 }

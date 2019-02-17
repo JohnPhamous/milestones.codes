@@ -13,8 +13,8 @@ const ContainerBackground = styled.div`
   background: url(${BackgroundImage});
   background-repeat: none;
   background-position: center;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   overflow: scroll;
   color: white;
   font-size: 2em;
