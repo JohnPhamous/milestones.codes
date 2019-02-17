@@ -21,7 +21,7 @@ const TweetButton = ({ count }) => {
 export default TweetButton;
 
 const TweetContainer = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 100%;
   display: flex;
 
@@ -31,6 +31,7 @@ const TweetContainer = styled.div`
     text-decoration: none;
     background: white;
     border-radius: 36px;
+    font-size: 0.5em;
     width: 100%;
     text-align: center;
     color: #c14325;
