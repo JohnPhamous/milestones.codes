@@ -34,6 +34,19 @@ const Wrapper = styled.main`
   max-width: 960px;
   padding: 1rem 3rem;
   height: 100vh;
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1em;
+    }
+
+    ul,
+    p {
+      font-size: 0.8em;
+    }
+
+    padding: 0.5rem 1.5rem;
+  }
 `;
 
 export default Layout;
