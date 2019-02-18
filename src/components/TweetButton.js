@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const TweetButton = ({ count, numQuestions }) => {
-  const message = `Today I scored a ${count}/${numQuestions} on milestones.codes! 🎉 Looking forward to seeing this number going up next time I check. 👨‍💻👩‍💻 #milestones4code`;
+  const message = `Today I scored a ${count}/${numQuestions} on milestones.codes! 🎉 Looking forward to seeing this number going up next time I check. 👨‍💻👩‍💻`;
 
   const encodedMessage = message.replace(" ", "%20");
 
   return (
     <TweetContainer>
       <a
-        href={`https://twitter.com/intent/tweet?text=${encodedMessage}`}
+        href={`https://twitter.com/intent/tweet?hashtags=milestones4code&text=${encodedMessage}`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -25,7 +25,7 @@ const TweetButton = ({ count, numQuestions }) => {
 export default TweetButton;
 
 const TweetContainer = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 36px;
   width: 100%;
   display: flex;
 

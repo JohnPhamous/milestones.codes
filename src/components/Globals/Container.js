@@ -11,11 +11,11 @@ export default Container;
 
 const ContainerBackground = styled.div`
   background: url(${BackgroundImage});
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   color: white;
   font-size: 2em;
   line-height: 1.3;

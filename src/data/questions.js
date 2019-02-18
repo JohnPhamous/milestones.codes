@@ -168,10 +168,6 @@ export default [
     type: "advanced"
   },
   {
-    question: "Built a program to solve someone elses problem",
-    type: "advanced"
-  },
-  {
     question: "Learned some design patterns",
     type: "advanced"
   },
