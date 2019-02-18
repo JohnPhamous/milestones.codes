@@ -35,6 +35,17 @@ module.exports = {
       options: {
         // Add any options here
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-134710197-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        cookieDomain: "milestones.codes"
+      }
     }
   ]
 };
