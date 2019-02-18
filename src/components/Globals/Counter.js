@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Counter = ({ count }) => (
+const Counter = ({ count, numQuestions }) => (
   <>
     <CounterWrapper>
       <p>
-        <span>{count}</span> / 50
+        <span>{count}</span> / {numQuestions}
       </p>
     </CounterWrapper>
 

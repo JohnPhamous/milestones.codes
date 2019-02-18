@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const TweetButton = ({ count }) => {
-  const message = `Today I scored a ${count}/50 on milestones.codes! 🎉 Looking forward to seeing this number going up next time I check. 👨‍💻👩‍💻`;
+const TweetButton = ({ count, numQuestions }) => {
+  const message = `Today I scored a ${count}/${numQuestions} on milestones.codes! 🎉 Looking forward to seeing this number going up next time I check. 👨‍💻👩‍💻 #milestones4code`;
 
   const encodedMessage = message.replace(" ", "%20");
 
@@ -11,8 +11,12 @@ const TweetButton = ({ count }) => {
       <a
         href={`https://twitter.com/intent/tweet?text=${encodedMessage}`}
         target="_blank"
+        rel="noopener noreferrer"
       >
-        Tweet your results! 🔥
+        Tweet your results!{" "}
+        <span role="img" aria-label="fire emoji">
+          🔥
+        </span>
       </a>
     </TweetContainer>
   );

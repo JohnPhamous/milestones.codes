@@ -137,62 +137,70 @@ export default [
   },
   {
     question: "Received a paid gig to program",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Written a unit test for a program",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Created a pull request on GitHub",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Used a database",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Written your first blog post",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Written a regular expression",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Know the difference between ASCII and unicode",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Understand how data is represented in memory",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Built a program to solve someone elses problem",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Learned some design patterns",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Riced your system",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Built a full stack application",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Shipped a full fledge application",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Learned a third language",
-    type: "advance"
+    type: "advanced"
   },
   {
     question: "Reviewed someone else's code",
-    type: "advance"
+    type: "advanced"
+  },
+  {
+    question: "Built a CI/CD pipeline",
+    type: "advanced"
+  },
+  {
+    question: "Built an auto-scaling service",
+    type: "advanced"
   }
 ];

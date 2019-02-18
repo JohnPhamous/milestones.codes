@@ -39,7 +39,7 @@ export default class List extends Component {
     return (
       <div>
         <ListContainer>
-          <Counter count={count} />
+          <Counter count={count} numQuestions={questions.length} />
           {questions.map((question, index) => (
             <>
               <Item
@@ -51,7 +51,7 @@ export default class List extends Component {
             </>
           ))}
         </ListContainer>
-        <TweetButton count={count} />
+        <TweetButton count={count} numQuestions={questions.length} />
       </div>
     );
   }
